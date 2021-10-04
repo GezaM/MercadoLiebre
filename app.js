@@ -6,7 +6,7 @@ app.use(express.static('public'));
 
 
 app.get('/', (req,res)=>{
-    res.sendFile(path.resolve(__dirname, './views/home.html'));
+    res.sendFile(__dirname + './views/home.html');
 });
 /* Register */
 app.get('/register', (req,res)=>{
