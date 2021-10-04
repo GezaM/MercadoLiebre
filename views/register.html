@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+    <header>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bienvenidxs a MercadoLiebre</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+        <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="/css/register.css">
+    </head>
+    <body>
+        <div class="top-header">
+            <div class="logo"> 
+                <img src="/images/logo-mercado-liebre.svg" alt="Logo de MercadoLiebre">
+            </div>
+            <div class="form" action="#" method="GET">
+                <div class="input">Buscar productos, marcas y más</div>
+                <div class="submit"><i class="fa fa-search"></i></div>
+            </div>
+            <p><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</p>
+        </div>
+        <nav>
+            <div><ul>
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul></div>
+            
+            <div class="ulmargin"><ul>
+                <li><a href="/register">Creá tu cuenta <i class="far fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul></div>
+        </nav>
+        <div class="burger-menu">
+            <i class="fa fa-bars burger"></i>
+        </div>
+    </header>
+    <section class="banner">
+        <img src="images/img-home-banner.jpg" alt="Banner de ofertas">
+    </section>
+       
+        <main>
+            <form action="/register" method="POST" enctype="multipart/form-data"><!--Enctype se agrega solo si tenemos input de tipo file-->
+                
+                <div class="form-control">
+                    <!-- <label for="">Nombre y apellido</label> -->
+                    <input placeholder='  Nombre y apellido' type="text" name="fullname">
+                </div>
+
+                <div class="form-control">
+
+                    <!-- <label for="">Email</label> -->
+                    <input placeholder='  E-mail' type="email" name="email">
+                </div>
+
+                <div class="form-control">
+                    <!-- <label for="">Fecha de nacimiento</label> -->
+                    <input type="date" name="">
+                </div>
+
+                <div class="form-control">
+                    <!-- <label for="">Perfil de usuario</label> -->
+                    <select name="perfil">
+                        <option disabled selected>Seleccioná una opción</option>
+                        <option value="comprador">Comprador</option>
+                        <option value="vendedor">Vendedor</option>
+                    </select>
+                </div>
+
+                <div class="form-checkbox">
+                    <h4>Categorias de interes</h4>
+                    <input type="checkbox" name="interes" value="Electro" id="electro">
+                    <label for="electro">Electro</label>
+
+                    <input type="checkbox" name="interes" value="Moda" id="moda">
+                    <label for="moda">Moda</label>
+
+                    <input type="checkbox" name="interes" value="healthy" id="healthy">
+                    <label for="healthy">Vida sana</label>
+                </div>
+
+                <div class="form-control">
+                    <label for="">Avatar</label>
+                    <input type="file" name="avatar">
+                </div>
+
+                <div class="form-control">
+                    <!-- <label for="">Contraseña</label> -->
+                    <input placeholder=" Contraseña" type="password" name="password">
+                </div>
+
+                <div class="form-control">
+                    <!-- <label for="">Repetir Contraseña</label> -->
+                    <input placeholder='  Repetir Contraseña' type="password" name="repassword">
+                </div>
+
+                <button type="submit" class="enviar">Registrate</button>
+                <button type="reset" class="borrar">Borrar</button>
+            </form>
+        </main>
+
+        <footer>
+            <div class="footercardcontainer">
+                <div class="footercard">
+                 <i class="fas fa-credit-card"></i>
+                 <h5>Pagá con tarjeta o en efectivo</h5>
+                 <p>Con Mercado Liebre Cash, tenés cuotas sin interés con tarjeta o efectivo en
+                     puntos de pago. ¡Y siempre es seguro!</p></div> 
+                <div class="footercard">
+                 <i class="fas fa-gift"></i>  
+                 <h5>Envío gratis desde $ 2.500</h5>
+                 <p>Solo por estar registrad@ en Mercado Liebre tenés envíos gratis en miles de
+                     productos. Es un beneficio de Mercado Puntos.</p></div>
+                <div class="footercard"> 
+                 <i class="fas fa-user-shield"></i>   
+                 <h5>Seguridad, de principio a fin</h5>
+                 <p>¿No te gusta? ¡Devolvelo! En Mercado Liebre, no hay nada que no puedas hacer,
+                     porque estás siempre protegid@.</p></div>
+                 </div>
+                
+                <div class="footercardcc"><p>Copyright © 1999-2020 MercadoLiebre S.R.L.
+        </footer>
+        
+    </body>
+</html>
