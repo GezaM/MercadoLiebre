@@ -45,6 +45,7 @@ form {
 }
 .form-checkbox {
     width: 100%;
+    display: flex;
     flex-direction: column;
     margin-bottom: 3px;
     padding: 10px;
